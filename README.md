@@ -11,7 +11,7 @@ real document.
 ## Five minutes to a scored run
 
 ```bash
-git clone <this repo> && cd portima-hackathon-starter
+git clone https://github.com/anyformat-ai/portima-hackathon-starter && cd portima-hackathon-starter
 cp .env.example .env                 # paste your key from https://app.anyformat.ai/api-key
 uv sync                              # needs uv: https://docs.astral.sh/uv/
 uv run af.py create order_form       # creates 2 workflows in your workspace
