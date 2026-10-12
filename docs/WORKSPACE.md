@@ -56,3 +56,15 @@ Example from a scanned sample accident statement:
 
 - `/usage`: credits used and left.
 - `/api-key`: create or revoke keys.
+
+## What visual grounding is made of
+
+`examples/parse_accident_05_scan.json` is a real fast-parse result for a scanned sample, trimmed:
+- **Page:** 13 layout blocks, each with a type (`title`, `text`, `table`, `picture`), a bounding box as
+  page fractions, and a parse confidence.
+- **Table blocks:** come down to the cell. The vehicle A plate is cell `r9c1` of block `p1_b3`.
+- **Fields:** each extracted field's `evidence` quotes that text and its page. That's what the
+  document view highlights.
+
+To get the blocks yourself, call `GET /v3/runs/{run_id}/` with `parse_output=blocks`, or the MCP
+tool `get_run` with `parse_output: "blocks"`.

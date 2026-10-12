@@ -1,0 +1,43 @@
+{
+  "_about": "Parse result (parse_output=blocks) for samples/accident_statements/accident_05_intersection_fr_scan.pdf, fast parse, plus the vehicle A extraction from the same run. Long table contents are trimmed to the rows that matter; bbox values are fractions of the page width and height.",
+  "parse": {
+    "parse_confidence": 90.6,
+    "blocks": [
+      {"id": "p1_b0", "type": "title", "page": 1, "bbox": {"x0": 0.3069, "y0": 0.0196, "x1": 0.6847, "y1": 0.0373}, "parse_confidence": 92, "content": "# CONSTAT EUROPÉEN D'ACCIDENT"},
+      {"id": "p1_b1", "type": "text", "page": 1, "bbox": {"x0": 0.2319, "y0": 0.0393, "x1": 0.7556, "y1": 0.0501}, "parse_confidence": 94, "content": "À signer obligatoirement par les deux conducteurs. Ne constitue pas une reconnaissance de responsabilité."},
+      {"id": "p1_b2", "type": "table", "page": 1, "bbox": {"x0": 0.0306, "y0": 0.0560, "x1": 0.9611, "y1": 0.1365}, "parse_confidence": 88,
+       "rows": [[{"cell_id": "r0c0", "text": "1. Date de l'accident<br/>17/01/2026"}, {"cell_id": "r0c1", "text": "Heure<br/>08.20"}, {"cell_id": "r0c2", "text": "2. Lieu (pays, localité, rue)<br/>BE, Leuven, Bondgenotenlaan 9"}],
+                [{"cell_id": "r1c0", "text": "3. Blessé(s) même léger(s)<br/>non ☒ oui ☐"}, {"cell_id": "r1c3", "text": "4. Dégâts matériels autres qu'aux véhicules A et B<br/>non ☒ oui ☐"}]]},
+      {"id": "p1_b3", "type": "table", "page": 1, "bbox": {"x0": 0.0306, "y0": 0.1424, "x1": 0.3556, "y1": 0.6110}, "parse_confidence": 91,
+       "rows": [[{"cell_id": "r0c0", "text": "<b>VÉHICULE A</b>"}],
+                [{"cell_id": "r2c0", "text": "Nom"}, {"cell_id": "r2c1", "text": "Janssens"}],
+                [{"cell_id": "r8c0", "text": "Marque, type"}, {"cell_id": "r8c1", "text": "Skoda Octavia"}],
+                [{"cell_id": "r9c0", "text": "N° d'immatriculation"}, {"cell_id": "r9c1", "text": "2-HgL-344"}],
+                [{"cell_id": "r13c0", "text": "N° de contrat"}, {"cell_id": "r13c1", "text": "60.237235"}],
+                [{"cell_id": "r16c0", "text": "Agence (ou bureau, courtier)"}, {"cell_id": "r16c1", "text": "Courtier Lemaire + Partners"}]],
+       "_trimmed": "26 rows in the full result"},
+      {"id": "p1_b4", "type": "table", "page": 1, "bbox": {"x0": 0.3583, "y0": 0.1424, "x1": 0.6361, "y1": 0.5707}, "parse_confidence": 90,
+       "rows": [[{"cell_id": "r16c0", "text": "☒ 16 venait de droite (dans un carrefour)"}, {"cell_id": "r16c1", "text": "☐"}],
+                [{"cell_id": "r17c0", "text": "☐ 17 n'avait pas observé un signal de priorité ou un feu rouge"}, {"cell_id": "r17c1", "text": "☒"}],
+                [{"cell_id": "r18c0", "text": "/ Nombre de cases marquées"}, {"cell_id": "r18c1", "text": "/"}]],
+       "_trimmed": "19 rows in the full result: the 17 circumstances, one per row, A box left, B box right"},
+      {"id": "p1_b5", "type": "table", "page": 1, "bbox": {"x0": 0.6403, "y0": 0.1424, "x1": 0.9611, "y1": 0.6081}, "parse_confidence": 91, "_trimmed": "VÉHICULE B, 26 rows"},
+      {"id": "p1_b6", "type": "text", "page": 1, "bbox": {"x0": 0.0389, "y0": 0.6159, "x1": 0.2528, "y1": 0.6297}, "parse_confidence": null, "content": "13. Croquis de l'accident au moment du choc"},
+      {"id": "p1_b7", "type": "picture", "page": 1, "bbox": {"x0": 0.2486, "y0": 0.6336, "x1": 0.7514, "y1": 0.8841}, "parse_confidence": 94, "content": "![img-0.jpeg](img-0.jpeg)"},
+      {"id": "p1_b8", "type": "text", "page": 1, "bbox": {"x0": 0.0417, "y0": 0.9008, "x1": 0.1458, "y1": 0.9116}, "parse_confidence": null, "content": "14. Mes observations"},
+      {"id": "p1_b9", "type": "text", "page": 1, "bbox": {"x0": 0.3681, "y0": 0.8998, "x1": 0.5139, "y1": 0.9106}, "parse_confidence": 94, "content": "15. Signature des conducteurs"},
+      {"id": "p1_b10", "type": "text", "page": 1, "bbox": {"x0": 0.3764, "y0": 0.9145, "x1": 0.5972, "y1": 0.9371}, "parse_confidence": null, "content": "Janssens Wouters"},
+      {"id": "p1_b11", "type": "text", "page": 1, "bbox": {"x0": 0.65, "y0": 0.8988, "x1": 0.7514, "y1": 0.9086}, "parse_confidence": 94, "content": "14. Mes observations"},
+      {"id": "p1_b12", "type": "page-footer", "page": 1, "bbox": {"x0": 0.3847, "y0": 0.9646, "x1": 0.6222, "y1": 0.9754}, "parse_confidence": null, "content": "SPECIMEN - synthetic test document, all data is fictitious"}
+    ]
+  },
+  "extraction_vehicle_a": {
+    "vehicle_a_vehicle_plate": {"value": "2-HgL-344", "confidence": 55, "evidence": [{"text": "N° d'immatriculation 2-HgL-344", "page_number": 1}], "_truth": "2-GZL-344"},
+    "vehicle_a_insurer_agency": {"value": "Courtier Lemaire + Partners", "confidence": 63, "evidence": [{"text": "Agence (ou bureau, courtier) Courtier Lemaire + Partners", "page_number": 1}], "_truth": "Courtier Lemaire & Partners"},
+    "vehicle_a_insurer_policy_number": {"value": "60.237235", "confidence": 89, "evidence": [{"text": "N° de contrat 60.237235", "page_number": 1}]}
+  },
+  "validations": [
+    {"rule_id": "a-plate-format", "severity": "warning", "status": "fail", "detail": "'2-HgL-344' does not match /^[0-9]-[A-Z]{3}-[0-9]{3}$/."},
+    {"rule_id": "a-plate-confident", "severity": "warning", "status": "fail", "detail": "confidence 55 >= 80 is false."}
+  ]
+}
