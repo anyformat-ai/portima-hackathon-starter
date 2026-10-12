@@ -1,5 +1,7 @@
 # Portima × anyformat: document intelligence starter
 
+![Page → block → cell → field: a scanned accident statement is parsed into layout blocks, extraction reads the policy number from cell r13c1 and returns it with confidence 89 and its address on the page](docs/grounding.gif)
+
 Turn **European accident statements** and **car order forms** into structured data with
 [anyformat](https://anyformat.ai), then measure it field by field: accuracy, confidence thresholds,
 and what a broker still has to check.
