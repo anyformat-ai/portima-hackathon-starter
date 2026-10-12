@@ -1,0 +1,17 @@
+{
+  "order_order_number": "GA-20155",
+  "order_order_date": "2026-05-15",
+  "order_dealer_name": "Garage Dupont Automobiles SRL",
+  "order_dealer_vat_number": "BE0456.789.123",
+  "order_salesperson": "Fien Lambert",
+  "order_expected_delivery": "2026-05-11",
+  "buyer_type": "person",
+  "buyer_name": "Elise Lambert",
+  "buyer_company_name": null,
+  "buyer_vat_number": null,
+  "buyer_address": "Steenweg op Brussel 64",
+  "buyer_postal_code": "1780",
+  "buyer_city": "Wemmel",
+  "buyer_phone": "+32 496 91 45 76",
+  "buyer_email": "elise.lambert@example.be"
+}

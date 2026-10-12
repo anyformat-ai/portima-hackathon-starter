@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-09-24",
+  "accident_time": "10:20",
+  "accident_country": "BE",
+  "accident_city": "Namur",
+  "accident_street": "Rue de Namur 60",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": "Fien Janssens, +32 489 765822",
+  "sketch_road_layout": "roundabout",
+  "sketch_description": "A is driving on the roundabout, B enters it and hits the right side of A."
+}

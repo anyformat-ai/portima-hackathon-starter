@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-02-21",
+  "accident_time": "13:35",
+  "accident_country": "BE",
+  "accident_city": "Namur",
+  "accident_street": "Rue de Namur 6",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": "Victor Lemaire, +32 478 987204",
+  "sketch_road_layout": "intersection",
+  "sketch_description": "B turns left while A overtakes it; A hits the left side of B."
+}

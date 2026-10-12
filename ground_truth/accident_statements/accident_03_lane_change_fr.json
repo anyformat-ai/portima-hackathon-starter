@@ -1,0 +1,129 @@
+{
+  "accident": {
+    "date": "2026-09-04",
+    "time": "20:35",
+    "country": "BE",
+    "city": "Ixelles",
+    "street": "Rue des Tilleuls 108",
+    "injuries": false,
+    "damage_to_other_vehicles": false,
+    "damage_to_other_objects": false,
+    "witnesses": null
+  },
+  "vehicle_a": {
+    "policyholder": {
+      "last_name": "Wouters",
+      "first_name": "Noah",
+      "address": "Meir 42",
+      "postal_code": "2000",
+      "city": "Antwerpen",
+      "country": "BE",
+      "phone": "+32 487 77 10 86"
+    },
+    "vehicle": {
+      "make_model": "Renault Clio",
+      "plate": "2-KHB-346",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Assurances Horizon SA",
+      "policy_number": "20.867460",
+      "green_card_number": "BE/597/2161193",
+      "valid_from": "2026-08-01",
+      "valid_to": "2027-08-01",
+      "agency": "Courtier Goossens & Partners"
+    },
+    "driver": {
+      "last_name": "Wouters",
+      "first_name": "Noah",
+      "birth_date": "1966-03-22",
+      "address": null,
+      "licence_number": "3361388464",
+      "licence_category": "B",
+      "licence_valid_until": "2031-09-28"
+    },
+    "impact_point": "left_side",
+    "visible_damage": "aile avant gauche",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": true,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "vehicle_b": {
+    "policyholder": {
+      "last_name": "Goossens",
+      "first_name": "Louise",
+      "address": "Chaussée de Liège 177",
+      "postal_code": "4000",
+      "city": "Liège",
+      "country": "BE",
+      "phone": "+32 476 49 61 95"
+    },
+    "vehicle": {
+      "make_model": "Kia Niro",
+      "plate": "1-HHC-446",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Assurances Horizon SA",
+      "policy_number": "85.680828",
+      "green_card_number": "BE/335/4694634",
+      "valid_from": "2026-08-17",
+      "valid_to": "2027-08-17",
+      "agency": "Courtier Peeters & Partners"
+    },
+    "driver": {
+      "last_name": "Goossens",
+      "first_name": "Louise",
+      "birth_date": "1962-12-21",
+      "address": null,
+      "licence_number": "1252860896",
+      "licence_category": "B",
+      "licence_valid_until": "2028-01-28"
+    },
+    "impact_point": "front_right",
+    "visible_damage": "aile avant droite",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": true,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "sketch": {
+    "road_layout": "multi_lane_road",
+    "description": "Both drive the same direction; B changes lanes into A."
+  }
+}

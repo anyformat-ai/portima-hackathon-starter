@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-04-18",
+  "accident_time": "09:50",
+  "accident_country": "BE",
+  "accident_city": "Leuven",
+  "accident_street": "Bondgenotenlaan 32",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": null,
+  "sketch_road_layout": "parking_lot",
+  "sketch_description": "A is parked, B reverses out of a parking space into the front of A."
+}

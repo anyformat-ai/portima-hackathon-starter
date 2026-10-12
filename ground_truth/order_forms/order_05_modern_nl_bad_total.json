@@ -1,0 +1,63 @@
+{
+  "order": {
+    "order_number": "AU-86556",
+    "order_date": "2026-07-25",
+    "dealer_name": "AutoCentrum Vlaanderen NV",
+    "dealer_vat_number": "BE0712.345.678",
+    "salesperson": "Fien Peeters",
+    "expected_delivery": "2027-08-01"
+  },
+  "buyer": {
+    "type": "person",
+    "name": "Jules Claes",
+    "company_name": null,
+    "vat_number": null,
+    "address": "Kerkstraat 85",
+    "postal_code": "9000",
+    "city": "Gent",
+    "phone": "+32 487 69 63 17",
+    "email": "jules.claes@example.be"
+  },
+  "vehicle": {
+    "make": "Renault",
+    "model": "Mégane E-Tech",
+    "trim": "Techno EV60",
+    "fuel": "electric",
+    "power_kw": 160,
+    "color": "Glacier White",
+    "vin": "WVW13R8RU48B1Y2L6",
+    "model_year": 2026
+  },
+  "options": [
+    {
+      "code": "TOW",
+      "description": "Retractable tow bar",
+      "price_excl_vat": 980.0
+    },
+    {
+      "code": "CAM",
+      "description": "360° parking camera",
+      "price_excl_vat": 720.0
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": 1450.0
+    }
+  ],
+  "pricing": {
+    "base_price_excl_vat": 39990.0,
+    "options_total_excl_vat": 3150.0,
+    "discount_excl_vat": 500.0,
+    "net_excl_vat": 42640.0,
+    "vat_rate": 21.0,
+    "vat_amount": 8954.4,
+    "total_incl_vat": 51694.4,
+    "currency": "EUR"
+  },
+  "financing": {
+    "type": "cash",
+    "provider": null,
+    "down_payment": null
+  }
+}

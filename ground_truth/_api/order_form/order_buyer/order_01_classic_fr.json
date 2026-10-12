@@ -1,0 +1,17 @@
+{
+  "order_order_number": "GA-51114",
+  "order_order_date": "2026-06-24",
+  "order_dealer_name": "Garage Dupont Automobiles SRL",
+  "order_dealer_vat_number": "BE0456.789.123",
+  "order_salesperson": "Jules Martin",
+  "order_expected_delivery": "2026-07-19",
+  "buyer_type": "company",
+  "buyer_name": "Lucas Janssens",
+  "buyer_company_name": "Janssens Consult BV",
+  "buyer_vat_number": "BE0294.360.145",
+  "buyer_address": "Bondgenotenlaan 67",
+  "buyer_postal_code": "3000",
+  "buyer_city": "Leuven",
+  "buyer_phone": "+32 475 84 43 14",
+  "buyer_email": "lucas.janssens@example.be"
+}

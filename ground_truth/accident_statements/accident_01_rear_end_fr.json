@@ -1,0 +1,129 @@
+{
+  "accident": {
+    "date": "2026-12-04",
+    "time": "17:05",
+    "country": "BE",
+    "city": "Gent",
+    "street": "Kerkstraat 76",
+    "injuries": false,
+    "damage_to_other_vehicles": false,
+    "damage_to_other_objects": false,
+    "witnesses": "Lucas Lambert, +32 477 334053"
+  },
+  "vehicle_a": {
+    "policyholder": {
+      "last_name": "Dubois",
+      "first_name": "Emma",
+      "address": "Rue des Tilleuls 60",
+      "postal_code": "1050",
+      "city": "Ixelles",
+      "country": "BE",
+      "phone": "+32 486 87 13 81"
+    },
+    "vehicle": {
+      "make_model": "Citroën C3",
+      "plate": "1-RWJ-928",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Assurances Horizon SA",
+      "policy_number": "30.832052",
+      "green_card_number": "BE/532/6708456",
+      "valid_from": "2025-12-21",
+      "valid_to": "2026-12-21",
+      "agency": "Courtier Lambert & Partners"
+    },
+    "driver": {
+      "last_name": "Dubois",
+      "first_name": "Emma",
+      "birth_date": "1967-04-25",
+      "address": null,
+      "licence_number": "2445662585",
+      "licence_category": "B",
+      "licence_valid_until": "2028-07-04"
+    },
+    "impact_point": "rear",
+    "visible_damage": "pare-chocs arrière, hayon",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": true,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "vehicle_b": {
+    "policyholder": {
+      "last_name": "Martin",
+      "first_name": "Olivia",
+      "address": "Bondgenotenlaan 68",
+      "postal_code": "3000",
+      "city": "Leuven",
+      "country": "BE",
+      "phone": "+32 495 15 68 78"
+    },
+    "vehicle": {
+      "make_model": "BMW 318d",
+      "plate": "2-WGC-146",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Delta Verzekeringen NV",
+      "policy_number": "47.183667",
+      "green_card_number": "BE/975/4905582",
+      "valid_from": "2025-07-03",
+      "valid_to": "2026-07-03",
+      "agency": "Courtier Janssens & Partners"
+    },
+    "driver": {
+      "last_name": "Martin",
+      "first_name": "Olivia",
+      "birth_date": "1982-05-15",
+      "address": null,
+      "licence_number": "2566942273",
+      "licence_category": "B",
+      "licence_valid_until": "2032-06-07"
+    },
+    "impact_point": "front",
+    "visible_damage": "pare-chocs avant, capot",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": true,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "sketch": {
+    "road_layout": "straight_road",
+    "description": "A stopped at a red light, B hits the rear of A in the same lane."
+  }
+}

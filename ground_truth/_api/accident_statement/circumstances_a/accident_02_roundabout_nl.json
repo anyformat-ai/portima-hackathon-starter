@@ -1,0 +1,20 @@
+{
+  "vehicle_a_circumstances_parked_or_stopped": "false",
+  "vehicle_a_circumstances_leaving_parking_or_opening_door": "false",
+  "vehicle_a_circumstances_entering_parking": "false",
+  "vehicle_a_circumstances_emerging_from_car_park_or_private_ground": "false",
+  "vehicle_a_circumstances_entering_car_park_or_private_ground": "false",
+  "vehicle_a_circumstances_entering_roundabout": "false",
+  "vehicle_a_circumstances_circulating_in_roundabout": "true",
+  "vehicle_a_circumstances_struck_rear_same_direction_same_lane": "false",
+  "vehicle_a_circumstances_same_direction_different_lane": "false",
+  "vehicle_a_circumstances_changing_lanes": "false",
+  "vehicle_a_circumstances_overtaking": "false",
+  "vehicle_a_circumstances_turning_right": "false",
+  "vehicle_a_circumstances_turning_left": "false",
+  "vehicle_a_circumstances_reversing": "false",
+  "vehicle_a_circumstances_encroaching_opposite_lane": "false",
+  "vehicle_a_circumstances_coming_from_right_at_intersection": "false",
+  "vehicle_a_circumstances_ignored_priority_sign_or_red_light": "false",
+  "vehicle_a_circumstances_count": "1"
+}

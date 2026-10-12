@@ -1,0 +1,68 @@
+{
+  "order": {
+    "order_number": "GA-20155",
+    "order_date": "2026-05-15",
+    "dealer_name": "Garage Dupont Automobiles SRL",
+    "dealer_vat_number": "BE0456.789.123",
+    "salesperson": "Fien Lambert",
+    "expected_delivery": "2026-05-11"
+  },
+  "buyer": {
+    "type": "person",
+    "name": "Elise Lambert",
+    "company_name": null,
+    "vat_number": null,
+    "address": "Steenweg op Brussel 64",
+    "postal_code": "1780",
+    "city": "Wemmel",
+    "phone": "+32 496 91 45 76",
+    "email": "elise.lambert@example.be"
+  },
+  "vehicle": {
+    "make": "BMW",
+    "model": "X1",
+    "trim": "sDrive18d",
+    "fuel": "diesel",
+    "power_kw": 110,
+    "color": "Glacier White",
+    "vin": null,
+    "model_year": 2026
+  },
+  "options": [
+    {
+      "code": "LED",
+      "description": "Matrix LED headlights",
+      "price_excl_vat": 1100.0
+    },
+    {
+      "code": "CAM",
+      "description": "360° parking camera",
+      "price_excl_vat": 720.0
+    },
+    {
+      "code": "ALU",
+      "description": "19\" alloy wheels",
+      "price_excl_vat": 890.0
+    },
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": 1290.0
+    }
+  ],
+  "pricing": {
+    "base_price_excl_vat": 46800.0,
+    "options_total_excl_vat": 4000.0,
+    "discount_excl_vat": 1500.0,
+    "net_excl_vat": 49300.0,
+    "vat_rate": 21.0,
+    "vat_amount": 10353.0,
+    "total_incl_vat": 59653.0,
+    "currency": "EUR"
+  },
+  "financing": {
+    "type": "loan",
+    "provider": "Belfius Auto Lease",
+    "down_payment": 2000.0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "vehicle_make": "Volkswagen",
+  "vehicle_model": "ID.4",
+  "vehicle_trim": "Pro Performance",
+  "vehicle_fuel": "electric",
+  "vehicle_power_kw": "150",
+  "vehicle_color": "Atlantic Blue",
+  "vehicle_vin": "WVWN04EYXHW9W3X2V",
+  "vehicle_model_year": "2026",
+  "options": [
+    {
+      "code": "WP1",
+      "description": "Winter pack (heated seats, steering wheel)",
+      "price_excl_vat": "650.00"
+    },
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": "1290.00"
+    },
+    {
+      "code": "NAV",
+      "description": "Navigation Pro with 12\" display",
+      "price_excl_vat": "1150.00"
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": "1450.00"
+    }
+  ],
+  "pricing_base_price_excl_vat": "41990.00",
+  "pricing_options_total_excl_vat": "4540.00",
+  "pricing_discount_excl_vat": "2250.00",
+  "pricing_net_excl_vat": "44280.00",
+  "pricing_vat_rate": "21.00",
+  "pricing_vat_amount": "9298.80",
+  "pricing_total_incl_vat": "53578.80",
+  "pricing_currency": "EUR",
+  "financing_type": "cash",
+  "financing_provider": null,
+  "financing_down_payment": null
+}

@@ -1,0 +1,18 @@
+{
+  "vehicle_b_policyholder_last_name": "Goossens",
+  "vehicle_b_policyholder_first_name": "Lucas",
+  "vehicle_b_policyholder_address": "Kerkstraat 4",
+  "vehicle_b_policyholder_postal_code": "9000",
+  "vehicle_b_policyholder_city": "Gent",
+  "vehicle_b_policyholder_country": "BE",
+  "vehicle_b_policyholder_phone": "+32 472 40 31 62",
+  "vehicle_b_vehicle_make_model": "Citroën C3",
+  "vehicle_b_vehicle_plate": "1-FNA-499",
+  "vehicle_b_vehicle_registration_country": "BE",
+  "vehicle_b_insurer_company": "Mosane Assurances",
+  "vehicle_b_insurer_policy_number": "68.399105",
+  "vehicle_b_insurer_green_card_number": "BE/533/9164991",
+  "vehicle_b_insurer_valid_from": "2026-08-07",
+  "vehicle_b_insurer_valid_to": "2027-08-07",
+  "vehicle_b_insurer_agency": "Courtier Maes & Partners"
+}

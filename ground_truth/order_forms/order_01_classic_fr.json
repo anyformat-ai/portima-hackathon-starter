@@ -1,0 +1,68 @@
+{
+  "order": {
+    "order_number": "GA-51114",
+    "order_date": "2026-06-24",
+    "dealer_name": "Garage Dupont Automobiles SRL",
+    "dealer_vat_number": "BE0456.789.123",
+    "salesperson": "Jules Martin",
+    "expected_delivery": "2026-07-19"
+  },
+  "buyer": {
+    "type": "company",
+    "name": "Lucas Janssens",
+    "company_name": "Janssens Consult BV",
+    "vat_number": "BE0294.360.145",
+    "address": "Bondgenotenlaan 67",
+    "postal_code": "3000",
+    "city": "Leuven",
+    "phone": "+32 475 84 43 14",
+    "email": "lucas.janssens@example.be"
+  },
+  "vehicle": {
+    "make": "Volkswagen",
+    "model": "ID.4",
+    "trim": "Pro Performance",
+    "fuel": "electric",
+    "power_kw": 150,
+    "color": "Atlantic Blue",
+    "vin": "WVWN04EYXHW9W3X2V",
+    "model_year": 2026
+  },
+  "options": [
+    {
+      "code": "WP1",
+      "description": "Winter pack (heated seats, steering wheel)",
+      "price_excl_vat": 650.0
+    },
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": 1290.0
+    },
+    {
+      "code": "NAV",
+      "description": "Navigation Pro with 12\" display",
+      "price_excl_vat": 1150.0
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": 1450.0
+    }
+  ],
+  "pricing": {
+    "base_price_excl_vat": 41990.0,
+    "options_total_excl_vat": 4540.0,
+    "discount_excl_vat": 2250.0,
+    "net_excl_vat": 44280.0,
+    "vat_rate": 21.0,
+    "vat_amount": 9298.8,
+    "total_incl_vat": 53578.8,
+    "currency": "EUR"
+  },
+  "financing": {
+    "type": "cash",
+    "provider": null,
+    "down_payment": null
+  }
+}

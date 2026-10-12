@@ -1,0 +1,149 @@
+{
+  "name": "Accident statement · 3 vehicle B: policyholder, vehicle, insurer",
+  "description": "Boxes 6-8 for vehicle B.",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "vehicle_b_policyholder_last_name",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6 policyholder / insured ('Preneur d'assurance' / 'Verzekeringnemer'): surname ('Nom' / 'Naam').",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_first_name",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: policyholder first name ('Prénom' / 'Voornaam').",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_address",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: street and house number only, without postal code or city.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_postal_code",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: postal code, digits only.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_city",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: city or municipality.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_country",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: country as an ISO 3166 alpha-2 code, e.g. BE.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_policyholder_phone",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 6: phone number or e-mail, as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_vehicle_make_model",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 7 vehicle: make and model ('Marque, type' / 'Merk, type'), e.g. 'Volkswagen Golf'.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_vehicle_plate",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 7: registration plate. Belgian plates look like 1-ABC-234; keep the dashes.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_vehicle_registration_country",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 7: country of registration as ISO alpha-2, e.g. BE.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_insurer_company",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8 insurance company name ('Société d'assurance' / 'Verzekeringsonderneming').",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_insurer_policy_number",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8: policy / contract number ('N° de contrat' / 'Polisnummer'), exactly as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_insurer_green_card_number",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8: green card number, exactly as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_insurer_valid_from",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8: first date of 'valid from / to' ('Valable du' / 'Geldig van'). Dates are written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_b_insurer_valid_to",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8: second date of 'valid from / to'. Dates are written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_b_insurer_agency",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 8: agency, office or broker ('Agence, bureau, courtier' / 'Agentschap, kantoor, makelaar').",
+            "data_type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "b-plate-format",
+          "name": "Vehicle B plate looks Belgian",
+          "kind": "deterministic",
+          "severity": "warning",
+          "check": {
+            "type": "regex",
+            "field": "vehicle_b_vehicle_plate",
+            "pattern": "^[0-9]-[A-Z]{3}-[0-9]{3}$"
+          }
+        },
+        {
+          "id": "b-policy-required",
+          "name": "Vehicle B policy number is present",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "required",
+            "field": "vehicle_b_insurer_policy_number"
+          }
+        },
+        {
+          "id": "b-plate-confident",
+          "name": "Vehicle B plate read with confidence of 80 or more",
+          "kind": "deterministic",
+          "severity": "warning",
+          "check": {
+            "type": "confidence",
+            "field": "vehicle_b_vehicle_plate",
+            "op": ">=",
+            "threshold": 80
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}

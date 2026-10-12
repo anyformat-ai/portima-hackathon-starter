@@ -1,0 +1,18 @@
+{
+  "vehicle_a_policyholder_last_name": "Janssens",
+  "vehicle_a_policyholder_first_name": "Jules",
+  "vehicle_a_policyholder_address": "Meir 146",
+  "vehicle_a_policyholder_postal_code": "2000",
+  "vehicle_a_policyholder_city": "Antwerpen",
+  "vehicle_a_policyholder_country": "BE",
+  "vehicle_a_policyholder_phone": "+32 477 84 86 15",
+  "vehicle_a_vehicle_make_model": "Skoda Octavia",
+  "vehicle_a_vehicle_plate": "2-GZL-344",
+  "vehicle_a_vehicle_registration_country": "BE",
+  "vehicle_a_insurer_company": "Mosane Assurances",
+  "vehicle_a_insurer_policy_number": "60.237235",
+  "vehicle_a_insurer_green_card_number": "BE/787/6033115",
+  "vehicle_a_insurer_valid_from": "2025-07-22",
+  "vehicle_a_insurer_valid_to": "2026-07-22",
+  "vehicle_a_insurer_agency": "Courtier Lemaire & Partners"
+}

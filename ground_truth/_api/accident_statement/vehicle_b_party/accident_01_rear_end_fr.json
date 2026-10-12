@@ -1,0 +1,18 @@
+{
+  "vehicle_b_policyholder_last_name": "Martin",
+  "vehicle_b_policyholder_first_name": "Olivia",
+  "vehicle_b_policyholder_address": "Bondgenotenlaan 68",
+  "vehicle_b_policyholder_postal_code": "3000",
+  "vehicle_b_policyholder_city": "Leuven",
+  "vehicle_b_policyholder_country": "BE",
+  "vehicle_b_policyholder_phone": "+32 495 15 68 78",
+  "vehicle_b_vehicle_make_model": "BMW 318d",
+  "vehicle_b_vehicle_plate": "2-WGC-146",
+  "vehicle_b_vehicle_registration_country": "BE",
+  "vehicle_b_insurer_company": "Delta Verzekeringen NV",
+  "vehicle_b_insurer_policy_number": "47.183667",
+  "vehicle_b_insurer_green_card_number": "BE/975/4905582",
+  "vehicle_b_insurer_valid_from": "2025-07-03",
+  "vehicle_b_insurer_valid_to": "2026-07-03",
+  "vehicle_b_insurer_agency": "Courtier Janssens & Partners"
+}

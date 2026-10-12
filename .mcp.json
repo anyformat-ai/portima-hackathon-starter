@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "anyformat": {
+      "type": "http",
+      "url": "https://api.anyformat.ai/mcp",
+      "headers": { "Authorization": "Bearer ${ANYFORMAT_API_KEY}" }
+    }
+  }
+}

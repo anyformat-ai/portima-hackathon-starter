@@ -1,0 +1,139 @@
+{
+  "name": "Accident statement · 1 accident & sketch",
+  "description": "European accident statement: boxes 1-5 and the sketch (box 13).",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "accident_date",
+            "description": "Box 1: date of the accident, written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "accident_time",
+            "description": "Box 1: time of the accident as HH:MM, 24-hour.",
+            "data_type": "string"
+          },
+          {
+            "name": "accident_country",
+            "description": "Box 2: country of the accident as ISO alpha-2, e.g. BE.",
+            "data_type": "string"
+          },
+          {
+            "name": "accident_city",
+            "description": "Box 2: city or municipality of the accident.",
+            "data_type": "string"
+          },
+          {
+            "name": "accident_street",
+            "description": "Box 2: street and number of the accident location.",
+            "data_type": "string"
+          },
+          {
+            "name": "accident_injuries",
+            "description": "Box 3: true if 'yes' ('oui' / 'ja') is ticked for injuries, false if 'no' is ticked.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "accident_damage_to_other_vehicles",
+            "description": "Box 4: true if material damage to vehicles other than A and B is ticked 'yes'.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "accident_damage_to_other_objects",
+            "description": "Box 4: true if material damage to objects other than vehicles is ticked 'yes'. The sample forms have one yes/no for box 4; use the same answer.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "accident_witnesses",
+            "description": "Box 5: witnesses (names, addresses, phone) as written; null if empty or a dash.",
+            "data_type": "string"
+          },
+          {
+            "name": "sketch_road_layout",
+            "description": "Box 13: the road layout drawn in the sketch.",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "straight_road",
+                "description": "A straight road, one lane each way"
+              },
+              {
+                "name": "multi_lane_road",
+                "description": "A road with several lanes in the same direction"
+              },
+              {
+                "name": "roundabout",
+                "description": "A roundabout"
+              },
+              {
+                "name": "intersection",
+                "description": "A crossing of two roads"
+              },
+              {
+                "name": "parking_lot",
+                "description": "A car park or parking spaces"
+              },
+              {
+                "name": "other",
+                "description": "Anything else"
+              }
+            ]
+          },
+          {
+            "name": "sketch_description",
+            "description": "Box 13: one sentence describing the sketch: road layout, where A and B are and which way they move at impact.",
+            "data_type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "accident-date-required",
+          "name": "Accident date is present",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "required",
+            "field": "accident_date"
+          }
+        },
+        {
+          "id": "accident-date-not-future",
+          "name": "Accident date is not in the future",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "date",
+            "field": "accident_date",
+            "earliest": "2000-01-01",
+            "latest": "today"
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}

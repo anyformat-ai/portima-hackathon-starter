@@ -1,0 +1,5 @@
+# Append to ~/.codex/config.toml (or .codex/config.toml in this repo, once trusted),
+# then: export ANYFORMAT_MCP_AUTH="Bearer $ANYFORMAT_API_KEY"
+[mcp_servers.anyformat]
+url = "https://api.anyformat.ai/mcp"
+env_http_headers = { "Authorization" = "ANYFORMAT_MCP_AUTH" }

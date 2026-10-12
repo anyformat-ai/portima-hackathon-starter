@@ -1,0 +1,18 @@
+{
+  "vehicle_a_policyholder_last_name": "Lambert",
+  "vehicle_a_policyholder_first_name": "Lars",
+  "vehicle_a_policyholder_address": "Avenue Louise 42",
+  "vehicle_a_policyholder_postal_code": "1000",
+  "vehicle_a_policyholder_city": "Bruxelles",
+  "vehicle_a_policyholder_country": "BE",
+  "vehicle_a_policyholder_phone": "+32 493 66 80 64",
+  "vehicle_a_vehicle_make_model": "Peugeot 208",
+  "vehicle_a_vehicle_plate": "1-MWV-251",
+  "vehicle_a_vehicle_registration_country": "BE",
+  "vehicle_a_insurer_company": "Polder Verzekeringen NV",
+  "vehicle_a_insurer_policy_number": "26.143860",
+  "vehicle_a_insurer_green_card_number": "BE/415/7117837",
+  "vehicle_a_insurer_valid_from": "2025-02-03",
+  "vehicle_a_insurer_valid_to": "2026-02-03",
+  "vehicle_a_insurer_agency": "Courtier Peeters & Partners"
+}

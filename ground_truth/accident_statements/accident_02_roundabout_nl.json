@@ -1,0 +1,129 @@
+{
+  "accident": {
+    "date": "2026-09-24",
+    "time": "10:20",
+    "country": "BE",
+    "city": "Namur",
+    "street": "Rue de Namur 60",
+    "injuries": false,
+    "damage_to_other_vehicles": false,
+    "damage_to_other_objects": false,
+    "witnesses": "Fien Janssens, +32 489 765822"
+  },
+  "vehicle_a": {
+    "policyholder": {
+      "last_name": "Wouters",
+      "first_name": "Lars",
+      "address": "Meir 15",
+      "postal_code": "2000",
+      "city": "Antwerpen",
+      "country": "BE",
+      "phone": "+32 477 14 50 61"
+    },
+    "vehicle": {
+      "make_model": "Skoda Octavia",
+      "plate": "1-YSN-758",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Polder Verzekeringen NV",
+      "policy_number": "28.377746",
+      "green_card_number": "BE/242/5137722",
+      "valid_from": "2026-02-07",
+      "valid_to": "2027-02-07",
+      "agency": "Courtier Goossens & Partners"
+    },
+    "driver": {
+      "last_name": "Wouters",
+      "first_name": "Lars",
+      "birth_date": "1992-05-24",
+      "address": null,
+      "licence_number": "7805745017",
+      "licence_category": "B",
+      "licence_valid_until": "2033-06-08"
+    },
+    "impact_point": "right_side",
+    "visible_damage": "portier rechts",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": true,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "vehicle_b": {
+    "policyholder": {
+      "last_name": "Lemaire",
+      "first_name": "Victor",
+      "address": "Avenue Louise 24",
+      "postal_code": "1000",
+      "city": "Bruxelles",
+      "country": "BE",
+      "phone": "+32 494 16 24 29"
+    },
+    "vehicle": {
+      "make_model": "Renault Clio",
+      "plate": "2-NXR-641",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Mosane Assurances",
+      "policy_number": "80.112038",
+      "green_card_number": "BE/796/2921859",
+      "valid_from": "2025-11-14",
+      "valid_to": "2026-11-14",
+      "agency": "Courtier Goossens & Partners"
+    },
+    "driver": {
+      "last_name": "Lemaire",
+      "first_name": "Victor",
+      "birth_date": "1975-11-11",
+      "address": null,
+      "licence_number": "5774080233",
+      "licence_category": "B",
+      "licence_valid_until": "2033-03-15"
+    },
+    "impact_point": "front_left",
+    "visible_damage": "koplamp links, bumper",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": true,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "sketch": {
+    "road_layout": "roundabout",
+    "description": "A is driving on the roundabout, B enters it and hits the right side of A."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "vehicle_a_driver_last_name": "Janssens",
+  "vehicle_a_driver_first_name": "Louise",
+  "vehicle_a_driver_birth_date": "1966-07-06",
+  "vehicle_a_driver_address": null,
+  "vehicle_a_driver_licence_number": "6491309593",
+  "vehicle_a_driver_licence_category": "B",
+  "vehicle_a_driver_licence_valid_until": "2030-02-15",
+  "vehicle_a_impact_point": "front",
+  "vehicle_a_visible_damage": "bumper voor",
+  "vehicle_a_remarks": null,
+  "vehicle_b_driver_last_name": "Goossens",
+  "vehicle_b_driver_first_name": "Lucas",
+  "vehicle_b_driver_birth_date": "1970-05-07",
+  "vehicle_b_driver_address": null,
+  "vehicle_b_driver_licence_number": "5160575046",
+  "vehicle_b_driver_licence_category": "B",
+  "vehicle_b_driver_licence_valid_until": "2035-01-24",
+  "vehicle_b_impact_point": "rear",
+  "vehicle_b_visible_damage": "bumper achter",
+  "vehicle_b_remarks": null
+}

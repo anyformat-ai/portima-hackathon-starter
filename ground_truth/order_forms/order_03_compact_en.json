@@ -1,0 +1,58 @@
+{
+  "order": {
+    "order_number": "BR-19545",
+    "order_date": "2026-08-20",
+    "dealer_name": "Brussels Premium Motors SA",
+    "dealer_vat_number": "BE0634.221.907",
+    "salesperson": "Elise Claes",
+    "expected_delivery": "2026-12-23"
+  },
+  "buyer": {
+    "type": "person",
+    "name": "Lars Lambert",
+    "company_name": null,
+    "vat_number": null,
+    "address": "Meir 58",
+    "postal_code": "2000",
+    "city": "Antwerpen",
+    "phone": "+32 495 35 28 13",
+    "email": "lars.lambert@example.be"
+  },
+  "vehicle": {
+    "make": "Toyota",
+    "model": "C-HR",
+    "trim": "Hybrid 140 Dynamic",
+    "fuel": "hybrid",
+    "power_kw": 103,
+    "color": "Atlantic Blue",
+    "vin": "WVWSKAG4RM6DSH6J6",
+    "model_year": 2026
+  },
+  "options": [
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": 1290.0
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": 1450.0
+    }
+  ],
+  "pricing": {
+    "base_price_excl_vat": 36290.0,
+    "options_total_excl_vat": 2740.0,
+    "discount_excl_vat": 0.0,
+    "net_excl_vat": 39030.0,
+    "vat_rate": 21.0,
+    "vat_amount": 8196.3,
+    "total_incl_vat": 47226.3,
+    "currency": "EUR"
+  },
+  "financing": {
+    "type": "cash",
+    "provider": null,
+    "down_payment": null
+  }
+}

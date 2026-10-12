@@ -1,0 +1,22 @@
+{
+  "vehicle_a_driver_last_name": "Wouters",
+  "vehicle_a_driver_first_name": "Noah",
+  "vehicle_a_driver_birth_date": "1966-03-22",
+  "vehicle_a_driver_address": null,
+  "vehicle_a_driver_licence_number": "3361388464",
+  "vehicle_a_driver_licence_category": "B",
+  "vehicle_a_driver_licence_valid_until": "2031-09-28",
+  "vehicle_a_impact_point": "left_side",
+  "vehicle_a_visible_damage": "aile avant gauche",
+  "vehicle_a_remarks": null,
+  "vehicle_b_driver_last_name": "Goossens",
+  "vehicle_b_driver_first_name": "Louise",
+  "vehicle_b_driver_birth_date": "1962-12-21",
+  "vehicle_b_driver_address": null,
+  "vehicle_b_driver_licence_number": "1252860896",
+  "vehicle_b_driver_licence_category": "B",
+  "vehicle_b_driver_licence_valid_until": "2028-01-28",
+  "vehicle_b_impact_point": "front_right",
+  "vehicle_b_visible_damage": "aile avant droite",
+  "vehicle_b_remarks": null
+}

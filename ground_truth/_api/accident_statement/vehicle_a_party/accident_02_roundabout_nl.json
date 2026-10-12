@@ -1,0 +1,18 @@
+{
+  "vehicle_a_policyholder_last_name": "Wouters",
+  "vehicle_a_policyholder_first_name": "Lars",
+  "vehicle_a_policyholder_address": "Meir 15",
+  "vehicle_a_policyholder_postal_code": "2000",
+  "vehicle_a_policyholder_city": "Antwerpen",
+  "vehicle_a_policyholder_country": "BE",
+  "vehicle_a_policyholder_phone": "+32 477 14 50 61",
+  "vehicle_a_vehicle_make_model": "Skoda Octavia",
+  "vehicle_a_vehicle_plate": "1-YSN-758",
+  "vehicle_a_vehicle_registration_country": "BE",
+  "vehicle_a_insurer_company": "Polder Verzekeringen NV",
+  "vehicle_a_insurer_policy_number": "28.377746",
+  "vehicle_a_insurer_green_card_number": "BE/242/5137722",
+  "vehicle_a_insurer_valid_from": "2026-02-07",
+  "vehicle_a_insurer_valid_to": "2027-02-07",
+  "vehicle_a_insurer_agency": "Courtier Goossens & Partners"
+}

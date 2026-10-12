@@ -1,0 +1,17 @@
+{
+  "order_order_number": "AU-86019",
+  "order_order_date": "2026-07-26",
+  "order_dealer_name": "AutoCentrum Vlaanderen NV",
+  "order_dealer_vat_number": "BE0712.345.678",
+  "order_salesperson": "Marie Wouters",
+  "order_expected_delivery": "2027-08-15",
+  "buyer_type": "person",
+  "buyer_name": "Marie Martin",
+  "buyer_company_name": null,
+  "buyer_vat_number": null,
+  "buyer_address": "Avenue Louise 78",
+  "buyer_postal_code": "1000",
+  "buyer_city": "Bruxelles",
+  "buyer_phone": "+32 482 80 10 48",
+  "buyer_email": "marie.martin@example.be"
+}

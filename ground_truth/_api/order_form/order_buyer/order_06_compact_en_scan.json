@@ -1,0 +1,17 @@
+{
+  "order_order_number": "BR-69598",
+  "order_order_date": "2026-06-07",
+  "order_dealer_name": "Brussels Premium Motors SA",
+  "order_dealer_vat_number": "BE0634.221.907",
+  "order_salesperson": "Olivia Wouters",
+  "order_expected_delivery": "2027-05-25",
+  "buyer_type": "person",
+  "buyer_name": "Emma Claes",
+  "buyer_company_name": null,
+  "buyer_vat_number": null,
+  "buyer_address": "Rue des Tilleuls 35",
+  "buyer_postal_code": "1050",
+  "buyer_city": "Ixelles",
+  "buyer_phone": "+32 497 69 33 16",
+  "buyer_email": "emma.claes@example.be"
+}

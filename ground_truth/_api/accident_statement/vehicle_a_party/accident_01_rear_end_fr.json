@@ -1,0 +1,18 @@
+{
+  "vehicle_a_policyholder_last_name": "Dubois",
+  "vehicle_a_policyholder_first_name": "Emma",
+  "vehicle_a_policyholder_address": "Rue des Tilleuls 60",
+  "vehicle_a_policyholder_postal_code": "1050",
+  "vehicle_a_policyholder_city": "Ixelles",
+  "vehicle_a_policyholder_country": "BE",
+  "vehicle_a_policyholder_phone": "+32 486 87 13 81",
+  "vehicle_a_vehicle_make_model": "Citroën C3",
+  "vehicle_a_vehicle_plate": "1-RWJ-928",
+  "vehicle_a_vehicle_registration_country": "BE",
+  "vehicle_a_insurer_company": "Assurances Horizon SA",
+  "vehicle_a_insurer_policy_number": "30.832052",
+  "vehicle_a_insurer_green_card_number": "BE/532/6708456",
+  "vehicle_a_insurer_valid_from": "2025-12-21",
+  "vehicle_a_insurer_valid_to": "2026-12-21",
+  "vehicle_a_insurer_agency": "Courtier Lambert & Partners"
+}

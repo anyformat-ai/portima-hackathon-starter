@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-01-17",
+  "accident_time": "08:20",
+  "accident_country": "BE",
+  "accident_city": "Leuven",
+  "accident_street": "Bondgenotenlaan 9",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": null,
+  "sketch_road_layout": "intersection",
+  "sketch_description": "A comes from the right at an intersection; B ignored the priority sign."
+}

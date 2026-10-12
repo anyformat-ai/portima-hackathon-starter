@@ -1,0 +1,22 @@
+{
+  "vehicle_a_driver_last_name": "Wouters",
+  "vehicle_a_driver_first_name": "Lars",
+  "vehicle_a_driver_birth_date": "1992-05-24",
+  "vehicle_a_driver_address": null,
+  "vehicle_a_driver_licence_number": "7805745017",
+  "vehicle_a_driver_licence_category": "B",
+  "vehicle_a_driver_licence_valid_until": "2033-06-08",
+  "vehicle_a_impact_point": "right_side",
+  "vehicle_a_visible_damage": "portier rechts",
+  "vehicle_a_remarks": null,
+  "vehicle_b_driver_last_name": "Lemaire",
+  "vehicle_b_driver_first_name": "Victor",
+  "vehicle_b_driver_birth_date": "1975-11-11",
+  "vehicle_b_driver_address": null,
+  "vehicle_b_driver_licence_number": "5774080233",
+  "vehicle_b_driver_licence_category": "B",
+  "vehicle_b_driver_licence_valid_until": "2033-03-15",
+  "vehicle_b_impact_point": "front_left",
+  "vehicle_b_visible_damage": "koplamp links, bumper",
+  "vehicle_b_remarks": null
+}

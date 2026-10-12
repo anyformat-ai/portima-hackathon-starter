@@ -1,0 +1,43 @@
+{
+  "vehicle_make": "BMW",
+  "vehicle_model": "X1",
+  "vehicle_trim": "sDrive18d",
+  "vehicle_fuel": "diesel",
+  "vehicle_power_kw": "110",
+  "vehicle_color": "Glacier White",
+  "vehicle_vin": null,
+  "vehicle_model_year": "2026",
+  "options": [
+    {
+      "code": "LED",
+      "description": "Matrix LED headlights",
+      "price_excl_vat": "1100.00"
+    },
+    {
+      "code": "CAM",
+      "description": "360° parking camera",
+      "price_excl_vat": "720.00"
+    },
+    {
+      "code": "ALU",
+      "description": "19\" alloy wheels",
+      "price_excl_vat": "890.00"
+    },
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": "1290.00"
+    }
+  ],
+  "pricing_base_price_excl_vat": "46800.00",
+  "pricing_options_total_excl_vat": "4000.00",
+  "pricing_discount_excl_vat": "1500.00",
+  "pricing_net_excl_vat": "49300.00",
+  "pricing_vat_rate": "21.00",
+  "pricing_vat_amount": "10353.00",
+  "pricing_total_incl_vat": "59653.00",
+  "pricing_currency": "EUR",
+  "financing_type": "loan",
+  "financing_provider": "Belfius Auto Lease",
+  "financing_down_payment": "2000.00"
+}

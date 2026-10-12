@@ -1,0 +1,129 @@
+{
+  "accident": {
+    "date": "2026-01-17",
+    "time": "08:20",
+    "country": "BE",
+    "city": "Leuven",
+    "street": "Bondgenotenlaan 9",
+    "injuries": false,
+    "damage_to_other_vehicles": false,
+    "damage_to_other_objects": false,
+    "witnesses": null
+  },
+  "vehicle_a": {
+    "policyholder": {
+      "last_name": "Janssens",
+      "first_name": "Jules",
+      "address": "Meir 146",
+      "postal_code": "2000",
+      "city": "Antwerpen",
+      "country": "BE",
+      "phone": "+32 477 84 86 15"
+    },
+    "vehicle": {
+      "make_model": "Skoda Octavia",
+      "plate": "2-GZL-344",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Mosane Assurances",
+      "policy_number": "60.237235",
+      "green_card_number": "BE/787/6033115",
+      "valid_from": "2025-07-22",
+      "valid_to": "2026-07-22",
+      "agency": "Courtier Lemaire & Partners"
+    },
+    "driver": {
+      "last_name": "Janssens",
+      "first_name": "Jules",
+      "birth_date": "1978-02-01",
+      "address": null,
+      "licence_number": "5278201677",
+      "licence_category": "B",
+      "licence_valid_until": "2028-09-07"
+    },
+    "impact_point": "front_left",
+    "visible_damage": "phare avant gauche",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": true,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "vehicle_b": {
+    "policyholder": {
+      "last_name": "Wouters",
+      "first_name": "Noah",
+      "address": "Rue de Namur 18",
+      "postal_code": "5000",
+      "city": "Namur",
+      "country": "BE",
+      "phone": "+32 498 41 57 46"
+    },
+    "vehicle": {
+      "make_model": "BMW 318d",
+      "plate": "1-ZVK-779",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Assurances Horizon SA",
+      "policy_number": "27.377312",
+      "green_card_number": "BE/218/2795765",
+      "valid_from": "2025-08-27",
+      "valid_to": "2026-08-27",
+      "agency": "Courtier Goossens & Partners"
+    },
+    "driver": {
+      "last_name": "Wouters",
+      "first_name": "Noah",
+      "birth_date": "1967-05-10",
+      "address": null,
+      "licence_number": "3597724331",
+      "licence_category": "B",
+      "licence_valid_until": "2032-04-22"
+    },
+    "impact_point": "right_side",
+    "visible_damage": "portière avant droite",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": true
+    },
+    "circumstances_count": 1
+  },
+  "sketch": {
+    "road_layout": "intersection",
+    "description": "A comes from the right at an intersection; B ignored the priority sign."
+  }
+}

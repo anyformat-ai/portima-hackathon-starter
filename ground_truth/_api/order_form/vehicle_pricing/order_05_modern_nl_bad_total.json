@@ -1,0 +1,38 @@
+{
+  "vehicle_make": "Renault",
+  "vehicle_model": "Mégane E-Tech",
+  "vehicle_trim": "Techno EV60",
+  "vehicle_fuel": "electric",
+  "vehicle_power_kw": "160",
+  "vehicle_color": "Glacier White",
+  "vehicle_vin": "WVW13R8RU48B1Y2L6",
+  "vehicle_model_year": "2026",
+  "options": [
+    {
+      "code": "TOW",
+      "description": "Retractable tow bar",
+      "price_excl_vat": "980.00"
+    },
+    {
+      "code": "CAM",
+      "description": "360° parking camera",
+      "price_excl_vat": "720.00"
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": "1450.00"
+    }
+  ],
+  "pricing_base_price_excl_vat": "39990.00",
+  "pricing_options_total_excl_vat": "3150.00",
+  "pricing_discount_excl_vat": "500.00",
+  "pricing_net_excl_vat": "42640.00",
+  "pricing_vat_rate": "21.00",
+  "pricing_vat_amount": "8954.40",
+  "pricing_total_incl_vat": "51694.40",
+  "pricing_currency": "EUR",
+  "financing_type": "cash",
+  "financing_provider": null,
+  "financing_down_payment": null
+}

@@ -1,0 +1,17 @@
+{
+  "order_order_number": "AU-86556",
+  "order_order_date": "2026-07-25",
+  "order_dealer_name": "AutoCentrum Vlaanderen NV",
+  "order_dealer_vat_number": "BE0712.345.678",
+  "order_salesperson": "Fien Peeters",
+  "order_expected_delivery": "2027-08-01",
+  "buyer_type": "person",
+  "buyer_name": "Jules Claes",
+  "buyer_company_name": null,
+  "buyer_vat_number": null,
+  "buyer_address": "Kerkstraat 85",
+  "buyer_postal_code": "9000",
+  "buyer_city": "Gent",
+  "buyer_phone": "+32 487 69 63 17",
+  "buyer_email": "jules.claes@example.be"
+}

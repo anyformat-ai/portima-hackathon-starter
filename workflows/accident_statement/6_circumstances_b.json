@@ -1,0 +1,138 @@
+{
+  "name": "Accident statement · 6 circumstances B",
+  "description": "Box 12, right column.",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "vehicle_b_circumstances_parked_or_stopped",
+            "description": "Box 12, row 1 ('parked / stopped'; FR 'en stationnement / à l'arrêt'; NL 'stond geparkeerd / stond stil'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_leaving_parking_or_opening_door",
+            "description": "Box 12, row 2 ('leaving a parking place / opening a door'; FR 'quittait un stationnement / ouvrait une portière'; NL 'verliet een parkeerplaats / opende een portier'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_entering_parking",
+            "description": "Box 12, row 3 ('entering a parking place'; FR 'prenait un stationnement'; NL 'ging parkeren'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_emerging_from_car_park_or_private_ground",
+            "description": "Box 12, row 4 ('emerging from a car park, private ground or track'; FR 'sortait d'un parking, d'un lieu privé, d'un chemin de terre'; NL 'verliet een parking, een privé-terrein, een veldweg'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_entering_car_park_or_private_ground",
+            "description": "Box 12, row 5 ('entering a car park, private ground or track'; FR 's'engageait dans un parking, un lieu privé, un chemin de terre'; NL 'reed een parking, een privé-terrein, een veldweg op'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_entering_roundabout",
+            "description": "Box 12, row 6 ('entering a roundabout'; FR 's'engageait sur une place à sens giratoire'; NL 'reed een rotonde op'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_circulating_in_roundabout",
+            "description": "Box 12, row 7 ('circulating in a roundabout'; FR 'roulait sur une place à sens giratoire'; NL 'reed op een rotonde'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_struck_rear_same_direction_same_lane",
+            "description": "Box 12, row 8 ('striking the rear of the other vehicle, same direction, same lane'; FR 'heurtait à l'arrière, même sens, même file'; NL 'reed achteraan in, zelfde richting, zelfde rijstrook'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_same_direction_different_lane",
+            "description": "Box 12, row 9 ('going in the same direction but in a different lane'; FR 'roulait dans le même sens et sur une file différente'; NL 'reed in dezelfde richting op een andere rijstrook'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_changing_lanes",
+            "description": "Box 12, row 10 ('changing lanes'; FR 'changeait de file'; NL 'veranderde van rijstrook'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_overtaking",
+            "description": "Box 12, row 11 ('overtaking'; FR 'doublait'; NL 'haalde in'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_turning_right",
+            "description": "Box 12, row 12 ('turning right'; FR 'virait à droite'; NL 'sloeg rechtsaf'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_turning_left",
+            "description": "Box 12, row 13 ('turning left'; FR 'virait à gauche'; NL 'sloeg linksaf'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_reversing",
+            "description": "Box 12, row 14 ('reversing'; FR 'reculait'; NL 'reed achteruit'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_encroaching_opposite_lane",
+            "description": "Box 12, row 15 ('encroaching on a lane for opposite traffic'; FR 'empiétait sur une voie réservée à la circulation en sens inverse'; NL 'kwam op een rijbaan bestemd voor tegenliggers'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_coming_from_right_at_intersection",
+            "description": "Box 12, row 16 ('coming from the right at an intersection'; FR 'venait de droite (dans un carrefour)'; NL 'kwam van rechts (op een kruispunt)'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_ignored_priority_sign_or_red_light",
+            "description": "Box 12, row 17 ('had not observed a priority sign or a red light'; FR 'n'avait pas observé un signal de priorité ou un feu rouge'; NL 'had een voorrangsteken of rood licht niet opgemerkt'): true only if the box in the RIGHT checkbox column (vehicle B) is ticked or crossed.",
+            "data_type": "boolean"
+          },
+          {
+            "name": "vehicle_b_circumstances_count",
+            "description": "Box 12, last row: the number of boxes marked, written by hand in the RIGHT checkbox column (vehicle B). A handwritten 1 can look like '/'.",
+            "data_type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "b-count-range",
+          "name": "Vehicle B ticked between 1 and 17 boxes",
+          "kind": "deterministic",
+          "severity": "warning",
+          "check": {
+            "type": "range",
+            "field": "vehicle_b_circumstances_count",
+            "min": 1,
+            "max": 17
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}

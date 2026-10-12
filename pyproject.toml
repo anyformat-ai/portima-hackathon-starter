@@ -1,0 +1,19 @@
+[project]
+name = "portima-hackathon-starter"
+version = "0.1.0"
+description = "Starter kit: European accident statements and car order forms into structured data with anyformat"
+requires-python = ">=3.11"
+dependencies = [
+    "anyformat",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+samples = [
+    "reportlab>=4.2",
+    "pymupdf>=1.24",
+    "pillow>=10.4",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,236 @@
+{
+  "name": "Car order form · 2 vehicle, options & price",
+  "description": "Dealer order form: vehicle, options, price and financing.",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "vehicle_make",
+            "description": "Vehicle make, e.g. Volkswagen.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_model",
+            "description": "Vehicle model, e.g. ID.4.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_trim",
+            "description": "Version or trim, e.g. 'Pro Performance'.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_fuel",
+            "description": "Fuel or powertrain.",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "petrol",
+                "description": "Petrol / essence / benzine"
+              },
+              {
+                "name": "diesel",
+                "description": "Diesel"
+              },
+              {
+                "name": "hybrid",
+                "description": "Hybrid or plug-in hybrid"
+              },
+              {
+                "name": "electric",
+                "description": "Battery electric"
+              },
+              {
+                "name": "other",
+                "description": "Anything else"
+              }
+            ]
+          },
+          {
+            "name": "vehicle_power_kw",
+            "description": "Power in kW.",
+            "data_type": "integer"
+          },
+          {
+            "name": "vehicle_color",
+            "description": "Exterior colour as printed.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_vin",
+            "description": "17-character VIN; null when the form leaves it empty or shows a dash.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_model_year",
+            "description": "Model year.",
+            "data_type": "integer"
+          },
+          {
+            "name": "options",
+            "description": "One row per option in the options table. Ignore totals rows.",
+            "data_type": "object",
+            "nested_fields": [
+              {
+                "name": "code",
+                "description": "Option code from the first column.",
+                "data_type": "string"
+              },
+              {
+                "name": "description",
+                "description": "Option description.",
+                "data_type": "string"
+              },
+              {
+                "name": "price_excl_vat",
+                "description": "Option price excluding VAT, as a number.",
+                "data_type": "float"
+              }
+            ]
+          },
+          {
+            "name": "pricing_base_price_excl_vat",
+            "description": "List / catalogue price excluding VAT.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_options_total_excl_vat",
+            "description": "Total of options excluding VAT.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_discount_excl_vat",
+            "description": "Discount excluding VAT, as a positive number (0 if none).",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_net_excl_vat",
+            "description": "Net price excluding VAT.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_vat_rate",
+            "description": "VAT rate in percent, e.g. 21.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_vat_amount",
+            "description": "VAT amount.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_total_incl_vat",
+            "description": "Grand total including VAT.",
+            "data_type": "float"
+          },
+          {
+            "name": "pricing_currency",
+            "description": "Currency as ISO code, e.g. EUR.",
+            "data_type": "string"
+          },
+          {
+            "name": "financing_type",
+            "description": "How the vehicle is paid.",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "cash",
+                "description": "Paid in full, no financing"
+              },
+              {
+                "name": "loan",
+                "description": "Car loan"
+              },
+              {
+                "name": "lease",
+                "description": "Lease / renting"
+              }
+            ]
+          },
+          {
+            "name": "financing_provider",
+            "description": "Financing company; null for cash.",
+            "data_type": "string"
+          },
+          {
+            "name": "financing_down_payment",
+            "description": "Down payment amount; null for cash.",
+            "data_type": "float"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "net-plus-vat-is-total",
+          "name": "Net + VAT = total",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "arithmetic",
+            "operands": [
+              "pricing_net_excl_vat",
+              "pricing_vat_amount"
+            ],
+            "operator": "sum",
+            "equals": "pricing_total_incl_vat",
+            "tolerance": 0.05
+          }
+        },
+        {
+          "id": "net-is-base-plus-options-minus-discount",
+          "name": "Base + options - discount = net",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "expression",
+            "expression": "abs(num(data.pricing_base_price_excl_vat) + num(data.pricing_options_total_excl_vat) - num(data.pricing_discount_excl_vat) - num(data.pricing_net_excl_vat)) <= 0.05"
+          }
+        },
+        {
+          "id": "options-add-up",
+          "name": "Option lines add up to the options total",
+          "kind": "deterministic",
+          "severity": "warning",
+          "check": {
+            "type": "expression",
+            "expression": "abs(sum(data.options.map(o, num(o.price_excl_vat))) - num(data.pricing_options_total_excl_vat)) <= 0.05"
+          }
+        },
+        {
+          "id": "vin-format",
+          "name": "VIN has 17 valid characters",
+          "kind": "deterministic",
+          "severity": "warning",
+          "check": {
+            "type": "regex",
+            "field": "vehicle_vin",
+            "pattern": "^[A-HJ-NPR-Z0-9]{17}$"
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}

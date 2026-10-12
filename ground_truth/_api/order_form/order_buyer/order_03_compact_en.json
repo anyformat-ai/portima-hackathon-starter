@@ -1,0 +1,17 @@
+{
+  "order_order_number": "BR-19545",
+  "order_order_date": "2026-08-20",
+  "order_dealer_name": "Brussels Premium Motors SA",
+  "order_dealer_vat_number": "BE0634.221.907",
+  "order_salesperson": "Elise Claes",
+  "order_expected_delivery": "2026-12-23",
+  "buyer_type": "person",
+  "buyer_name": "Lars Lambert",
+  "buyer_company_name": null,
+  "buyer_vat_number": null,
+  "buyer_address": "Meir 58",
+  "buyer_postal_code": "2000",
+  "buyer_city": "Antwerpen",
+  "buyer_phone": "+32 495 35 28 13",
+  "buyer_email": "lars.lambert@example.be"
+}

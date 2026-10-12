@@ -1,0 +1,131 @@
+{
+  "name": "Car order form · 1 order & buyer",
+  "description": "Dealer order form: header and buyer.",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "order_order_number",
+            "description": "Order number ('N° de commande' / 'Bestelnummer' / 'Order no.'), exactly as printed.",
+            "data_type": "string"
+          },
+          {
+            "name": "order_order_date",
+            "description": "Order date, printed day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "order_dealer_name",
+            "description": "Name of the dealer that issued the form, from the letterhead.",
+            "data_type": "string"
+          },
+          {
+            "name": "order_dealer_vat_number",
+            "description": "Dealer VAT number, e.g. BE0123.456.789, exactly as printed.",
+            "data_type": "string"
+          },
+          {
+            "name": "order_salesperson",
+            "description": "Sales advisor ('Conseiller' / 'Verkoper' / 'Sales advisor'), first and last name.",
+            "data_type": "string"
+          },
+          {
+            "name": "order_expected_delivery",
+            "description": "Expected delivery date, printed day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "buyer_type",
+            "description": "Whether the buyer is a private person or a company (a company name or VAT number is filled in).",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "person",
+                "description": "A private individual"
+              },
+              {
+                "name": "company",
+                "description": "A company"
+              }
+            ]
+          },
+          {
+            "name": "buyer_name",
+            "description": "Buyer's contact person, first and last name.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_company_name",
+            "description": "Buyer's company name; null for a private buyer.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_vat_number",
+            "description": "Buyer's VAT number; null for a private buyer.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_address",
+            "description": "Buyer's street and house number, without postal code or city.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_postal_code",
+            "description": "Buyer's postal code.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_city",
+            "description": "Buyer's city.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_phone",
+            "description": "Buyer's phone number as printed.",
+            "data_type": "string"
+          },
+          {
+            "name": "buyer_email",
+            "description": "Buyer's e-mail address.",
+            "data_type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "order-number-required",
+          "name": "Order number is present",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "required",
+            "field": "order_order_number"
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-09-04",
+  "accident_time": "20:35",
+  "accident_country": "BE",
+  "accident_city": "Ixelles",
+  "accident_street": "Rue des Tilleuls 108",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": null,
+  "sketch_road_layout": "multi_lane_road",
+  "sketch_description": "Both drive the same direction; B changes lanes into A."
+}

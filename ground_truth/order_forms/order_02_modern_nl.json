@@ -1,0 +1,63 @@
+{
+  "order": {
+    "order_number": "AU-86019",
+    "order_date": "2026-07-26",
+    "dealer_name": "AutoCentrum Vlaanderen NV",
+    "dealer_vat_number": "BE0712.345.678",
+    "salesperson": "Marie Wouters",
+    "expected_delivery": "2027-08-15"
+  },
+  "buyer": {
+    "type": "person",
+    "name": "Marie Martin",
+    "company_name": null,
+    "vat_number": null,
+    "address": "Avenue Louise 78",
+    "postal_code": "1000",
+    "city": "Bruxelles",
+    "phone": "+32 482 80 10 48",
+    "email": "marie.martin@example.be"
+  },
+  "vehicle": {
+    "make": "Skoda",
+    "model": "Octavia Combi",
+    "trim": "Style 1.5 TSI",
+    "fuel": "petrol",
+    "power_kw": 110,
+    "color": "Deep Black",
+    "vin": null,
+    "model_year": 2026
+  },
+  "options": [
+    {
+      "code": "TOW",
+      "description": "Retractable tow bar",
+      "price_excl_vat": 980.0
+    },
+    {
+      "code": "CAM",
+      "description": "360° parking camera",
+      "price_excl_vat": 720.0
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": 1450.0
+    }
+  ],
+  "pricing": {
+    "base_price_excl_vat": 33450.0,
+    "options_total_excl_vat": 3150.0,
+    "discount_excl_vat": 1500.0,
+    "net_excl_vat": 35100.0,
+    "vat_rate": 21.0,
+    "vat_amount": 7371.0,
+    "total_incl_vat": 42471.0,
+    "currency": "EUR"
+  },
+  "financing": {
+    "type": "loan",
+    "provider": "Beobank",
+    "down_payment": 2000.0
+  }
+}

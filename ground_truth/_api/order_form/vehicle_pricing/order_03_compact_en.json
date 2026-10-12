@@ -1,0 +1,33 @@
+{
+  "vehicle_make": "Toyota",
+  "vehicle_model": "C-HR",
+  "vehicle_trim": "Hybrid 140 Dynamic",
+  "vehicle_fuel": "hybrid",
+  "vehicle_power_kw": "103",
+  "vehicle_color": "Atlantic Blue",
+  "vehicle_vin": "WVWSKAG4RM6DSH6J6",
+  "vehicle_model_year": "2026",
+  "options": [
+    {
+      "code": "PAN",
+      "description": "Panoramic sunroof",
+      "price_excl_vat": "1290.00"
+    },
+    {
+      "code": "ADA",
+      "description": "Adaptive cruise control + lane assist",
+      "price_excl_vat": "1450.00"
+    }
+  ],
+  "pricing_base_price_excl_vat": "36290.00",
+  "pricing_options_total_excl_vat": "2740.00",
+  "pricing_discount_excl_vat": "0.00",
+  "pricing_net_excl_vat": "39030.00",
+  "pricing_vat_rate": "21.00",
+  "pricing_vat_amount": "8196.30",
+  "pricing_total_incl_vat": "47226.30",
+  "pricing_currency": "EUR",
+  "financing_type": "cash",
+  "financing_provider": null,
+  "financing_down_payment": null
+}

@@ -1,0 +1,129 @@
+{
+  "accident": {
+    "date": "2026-04-18",
+    "time": "09:50",
+    "country": "BE",
+    "city": "Leuven",
+    "street": "Bondgenotenlaan 32",
+    "injuries": false,
+    "damage_to_other_vehicles": false,
+    "damage_to_other_objects": false,
+    "witnesses": null
+  },
+  "vehicle_a": {
+    "policyholder": {
+      "last_name": "Janssens",
+      "first_name": "Louise",
+      "address": "Chaussée de Liège 25",
+      "postal_code": "4000",
+      "city": "Liège",
+      "country": "BE",
+      "phone": "+32 491 65 55 64"
+    },
+    "vehicle": {
+      "make_model": "Volkswagen Golf",
+      "plate": "1-BNL-919",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Assurances Horizon SA",
+      "policy_number": "41.300896",
+      "green_card_number": "BE/294/9997381",
+      "valid_from": "2026-08-28",
+      "valid_to": "2027-08-28",
+      "agency": "Courtier Lemaire & Partners"
+    },
+    "driver": {
+      "last_name": "Janssens",
+      "first_name": "Louise",
+      "birth_date": "1966-07-06",
+      "address": null,
+      "licence_number": "6491309593",
+      "licence_category": "B",
+      "licence_valid_until": "2030-02-15"
+    },
+    "impact_point": "front",
+    "visible_damage": "bumper voor",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": true,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": false,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "vehicle_b": {
+    "policyholder": {
+      "last_name": "Goossens",
+      "first_name": "Lucas",
+      "address": "Kerkstraat 4",
+      "postal_code": "9000",
+      "city": "Gent",
+      "country": "BE",
+      "phone": "+32 472 40 31 62"
+    },
+    "vehicle": {
+      "make_model": "Citroën C3",
+      "plate": "1-FNA-499",
+      "registration_country": "BE"
+    },
+    "insurer": {
+      "company": "Mosane Assurances",
+      "policy_number": "68.399105",
+      "green_card_number": "BE/533/9164991",
+      "valid_from": "2026-08-07",
+      "valid_to": "2027-08-07",
+      "agency": "Courtier Maes & Partners"
+    },
+    "driver": {
+      "last_name": "Goossens",
+      "first_name": "Lucas",
+      "birth_date": "1970-05-07",
+      "address": null,
+      "licence_number": "5160575046",
+      "licence_category": "B",
+      "licence_valid_until": "2035-01-24"
+    },
+    "impact_point": "rear",
+    "visible_damage": "bumper achter",
+    "remarks": null,
+    "circumstances": {
+      "parked_or_stopped": false,
+      "leaving_parking_or_opening_door": false,
+      "entering_parking": false,
+      "emerging_from_car_park_or_private_ground": false,
+      "entering_car_park_or_private_ground": false,
+      "entering_roundabout": false,
+      "circulating_in_roundabout": false,
+      "struck_rear_same_direction_same_lane": false,
+      "same_direction_different_lane": false,
+      "changing_lanes": false,
+      "overtaking": false,
+      "turning_right": false,
+      "turning_left": false,
+      "reversing": true,
+      "encroaching_opposite_lane": false,
+      "coming_from_right_at_intersection": false,
+      "ignored_priority_sign_or_red_light": false
+    },
+    "circumstances_count": 1
+  },
+  "sketch": {
+    "road_layout": "parking_lot",
+    "description": "A is parked, B reverses out of a parking space into the front of A."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "accident_date": "2026-12-04",
+  "accident_time": "17:05",
+  "accident_country": "BE",
+  "accident_city": "Gent",
+  "accident_street": "Kerkstraat 76",
+  "accident_injuries": "false",
+  "accident_damage_to_other_vehicles": "false",
+  "accident_damage_to_other_objects": "false",
+  "accident_witnesses": "Lucas Lambert, +32 477 334053",
+  "sketch_road_layout": "straight_road",
+  "sketch_description": "A stopped at a red light, B hits the rear of A in the same lane."
+}

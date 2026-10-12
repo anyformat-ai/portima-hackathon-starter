@@ -1,0 +1,228 @@
+{
+  "name": "Accident statement · 4 drivers & damage",
+  "description": "Boxes 9-11 and 14 for both vehicles.",
+  "nodes": [
+    {
+      "id": "parse",
+      "type": "parse",
+      "mode": "lite"
+    },
+    {
+      "id": "extract",
+      "type": "extract",
+      "mode": "standard",
+      "extraction_schema": {
+        "fields": [
+          {
+            "name": "vehicle_a_driver_last_name",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9 driver ('Conducteur' / 'Bestuurder'): surname.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_driver_first_name",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: driver first name.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_driver_birth_date",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: driver date of birth, written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_a_driver_address",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: driver address if written; otherwise null.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_driver_licence_number",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: driving licence number, digits exactly as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_driver_licence_category",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: licence category, e.g. B.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_driver_licence_valid_until",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 9: licence valid until, written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_a_impact_point",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 10: where the arrow points on the small car outline (the car's front is at the top).",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "front",
+                "description": "Front centre"
+              },
+              {
+                "name": "front_left",
+                "description": "Front left corner"
+              },
+              {
+                "name": "front_right",
+                "description": "Front right corner"
+              },
+              {
+                "name": "left_side",
+                "description": "Left side"
+              },
+              {
+                "name": "right_side",
+                "description": "Right side"
+              },
+              {
+                "name": "rear",
+                "description": "Rear centre"
+              },
+              {
+                "name": "rear_left",
+                "description": "Rear left corner"
+              },
+              {
+                "name": "rear_right",
+                "description": "Rear right corner"
+              }
+            ]
+          },
+          {
+            "name": "vehicle_a_visible_damage",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 11: visible damage, handwritten, as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_a_remarks",
+            "description": "Vehicle A: the LEFT column of the form (blue, 'VÉHICULE A' / 'VOERTUIG A'). Box 14 'Mes observations' / 'Mijn opmerkingen' for this vehicle; null if empty.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_last_name",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9 driver ('Conducteur' / 'Bestuurder'): surname.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_first_name",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: driver first name.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_birth_date",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: driver date of birth, written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_b_driver_address",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: driver address if written; otherwise null.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_licence_number",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: driving licence number, digits exactly as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_licence_category",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: licence category, e.g. B.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_driver_licence_valid_until",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 9: licence valid until, written day/month/year.",
+            "data_type": "date"
+          },
+          {
+            "name": "vehicle_b_impact_point",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 10: where the arrow points on the small car outline (the car's front is at the top).",
+            "data_type": "enum",
+            "enum_options": [
+              {
+                "name": "front",
+                "description": "Front centre"
+              },
+              {
+                "name": "front_left",
+                "description": "Front left corner"
+              },
+              {
+                "name": "front_right",
+                "description": "Front right corner"
+              },
+              {
+                "name": "left_side",
+                "description": "Left side"
+              },
+              {
+                "name": "right_side",
+                "description": "Right side"
+              },
+              {
+                "name": "rear",
+                "description": "Rear centre"
+              },
+              {
+                "name": "rear_left",
+                "description": "Rear left corner"
+              },
+              {
+                "name": "rear_right",
+                "description": "Rear right corner"
+              }
+            ]
+          },
+          {
+            "name": "vehicle_b_visible_damage",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 11: visible damage, handwritten, as written.",
+            "data_type": "string"
+          },
+          {
+            "name": "vehicle_b_remarks",
+            "description": "Vehicle B: the RIGHT column of the form (yellow, 'VÉHICULE B' / 'VOERTUIG B'). Box 14 'Mes observations' / 'Mijn opmerkingen' for this vehicle; null if empty.",
+            "data_type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "id": "validate",
+      "type": "validate",
+      "rules": [
+        {
+          "id": "a-driver-adult",
+          "name": "Driver A birth date is plausible",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "date",
+            "field": "vehicle_a_driver_birth_date",
+            "earliest": "1920-01-01",
+            "latest": "today"
+          }
+        },
+        {
+          "id": "b-driver-adult",
+          "name": "Driver B birth date is plausible",
+          "kind": "deterministic",
+          "severity": "error",
+          "check": {
+            "type": "date",
+            "field": "vehicle_b_driver_birth_date",
+            "earliest": "1920-01-01",
+            "latest": "today"
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse",
+      "target": "extract"
+    },
+    {
+      "source": "extract",
+      "target": "validate"
+    }
+  ]
+}
