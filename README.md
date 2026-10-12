@@ -94,6 +94,7 @@ schemas extract worse than short ones, and a workflow holds one extract. The acc
 
 ## Docs
 
+- [`CONTEXT.md`](CONTEXT.md): the context pack: challenge, data contract, limits, what you can build
 - [`docs/WORKSPACE.md`](docs/WORKSPACE.md): what you'll see in app.anyformat.ai and where
 - [`docs/GROUND_TRUTH.md`](docs/GROUND_TRUTH.md): make ground truth for real documents with Claude, then have a broker check it
 - [`docs/OPTIMIZER.md`](docs/OPTIMIZER.md): dataset → evaluation → optimizer

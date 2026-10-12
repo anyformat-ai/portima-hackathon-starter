@@ -7,7 +7,8 @@ field by field:
   insurers, the 17 circumstance boxes, impact points and the sketch.
 - **Car order form**: buyer, vehicle, options, price and financing.
 
-Start by running the checks in **First run** below. Do not write new code before they pass.
+Read `CONTEXT.md` first: the challenge, the data contract, the limits and what you can build.
+Then run the checks in **First run** below. Do not write new code before they pass.
 
 ## Layout
 
