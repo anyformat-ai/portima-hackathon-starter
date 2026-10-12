@@ -66,5 +66,5 @@ Example from a scanned sample accident statement:
 - **Fields:** each extracted field's `evidence` quotes that text and its page. That's what the
   document view highlights.
 
-To get the blocks yourself, call `GET /v3/runs/{run_id}/` with `parse_output=blocks`, or the MCP
-tool `get_run` with `parse_output: "blocks"`.
+To get the blocks yourself, read `results.parse.blocks` from `GET /v3/runs/{run_id}/`, or call the
+MCP tool `get_run` with `parse_output: "blocks"`.
