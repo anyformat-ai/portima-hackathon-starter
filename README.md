@@ -4,6 +4,10 @@ Turn **European accident statements** and **car order forms** into structured da
 [anyformat](https://anyformat.ai), then measure it field by field: accuracy, confidence thresholds,
 and what a broker still has to check.
 
+**Start with the context pack: [`docs/context-pack.pdf`](docs/context-pack.pdf)** (25 slides: the challenge, setup,
+how it works, the data contract, what you can build, how to measure it, limits). Its agent-readable twin is
+[`CONTEXT.md`](CONTEXT.md).
+
 Everything in `samples/` is synthetic. Every name, plate, VIN and policy number is invented. The
 samples come with their correct answers, so you can check your setup end to end before you touch a
 real document.
@@ -94,7 +98,8 @@ schemas extract worse than short ones, and a workflow holds one extract. The acc
 
 ## Docs
 
-- [`CONTEXT.md`](CONTEXT.md): the context pack: challenge, data contract, limits, what you can build
+- [`docs/context-pack.pdf`](docs/context-pack.pdf): the context pack as slides, for people
+- [`CONTEXT.md`](CONTEXT.md): the same context pack, for your coding agent
 - [`docs/WORKSPACE.md`](docs/WORKSPACE.md): what you'll see in app.anyformat.ai and where
 - [`docs/GROUND_TRUTH.md`](docs/GROUND_TRUTH.md): make ground truth for real documents with Claude, then have a broker check it
 - [`docs/OPTIMIZER.md`](docs/OPTIMIZER.md): dataset → evaluation → optimizer

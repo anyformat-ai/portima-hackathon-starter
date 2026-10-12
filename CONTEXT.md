@@ -1,7 +1,7 @@
 # Context: Portima document intelligence hackathon
 
-Prepared by anyformat for Portima engineering. This file and the slide deck say the same thing:
-the slides are for people, this file is for coding agents.
+Prepared by anyformat for Portima engineering. This file and the slide deck (`docs/context-pack.pdf`) say the same
+thing: the slides are for people, this file is for coding agents.
 
 ## The challenge
 
